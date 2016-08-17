@@ -1,7 +1,9 @@
-package com.baya.bayatechandroid;
+package com.baya.bayatechandroid.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.baya.bayatechandroid.R;
 
 public class MainActivity extends AppCompatActivity {
 
