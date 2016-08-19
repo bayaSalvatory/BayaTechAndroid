@@ -2,13 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/baya_tech_indigo">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:text="This is AAuth"
-        android:textSize="16sp" />
+        style="@style/appNameStyle"
+        android:layout_marginTop="100dp"
+        android:text="@string/app_name" />
+
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        style="@style/accountEditTextStyle"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress|textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        style="@style/accountEditTextStyle"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword|textNoSuggestions" />
+
+    <Button
+        android:id="@+id/continue_button"
+        style="@style/accountButtonStyle"
+        android:layout_marginTop="5dp"
+        android:text="@string/continue_txt" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/accountTextStyle"
+        android:text="@string/forgot_password" />
+
 
 </LinearLayout>

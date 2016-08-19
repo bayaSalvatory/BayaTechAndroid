@@ -3,4 +3,20 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--Baya Tech Color palette -->
+    <color name="baya_tech_medium_grey_alpha_80">#CCCCCCCC</color>
+    <color name="baya_tech_grey_alpha_80">#CCEEEDED</color>
+    <color name="baya_tech_alpha_50">#7F000000</color>
+    <color name="baya_tech_alpha_66">#AA000000</color>
+    <color name="baya_tech_alpha_80">#CC818181</color>
+    <color name="baya_tech_black">#000000</color>
+    <color name="baya_tech_grey">#818181</color>
+    <color name="baya_tech_indigo">#2E0854</color>
+    <color name="baya_tech_medium_sea_green">#3CB371</color>
+    <color name="baya_tech_octopus">#34925E</color>
+    <color name="baya_tech_white">#FFFFFF</color>
+
+
+
 </resources>

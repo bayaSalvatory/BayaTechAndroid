@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">BayaTechAndroid</string>
+    <string name="app_name">BayaTech</string>
+
+    <!-- Account Authentication-->
+    <string name="login_text">Have an account already? Login</string>
+    <string name="no_stress">No time to Stress</string>
+    <string name="we_go_u_covered">We got you covered</string>
+    <string name="forgot_password">Forgot password? We got you. Click Here</string>
+
+    <!--Hints-->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+
+    <!--General String-->
+    <string name="continue_txt">Continue</string>
+
 </resources>

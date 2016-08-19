@@ -4,6 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 import com.baya.bayatechandroid.R;
 
@@ -12,12 +16,16 @@ import com.baya.bayatechandroid.R;
  */
 public class SplashActivity extends AppCompatActivity {
 
+    private TextView mAppNameView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        startBayaTechAppOnDelayed(2000);
+        mAppNameView = (TextView) findViewById(R.id.app_name_text_view);
+        startSpinningAnimation(mAppNameView);
+        startBayaTechAppOnDelayed(4000);
     }
 
     /**
@@ -36,8 +44,15 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(startActivityRunnable, timeMilliSec);
     }
 
+    public void startSpinningAnimation(View view) {
+        Animation rotation = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        rotation.setRepeatCount(10);
+        view.startAnimation(rotation);
+    }
 
     public void startAccountActivity() {
+        mAppNameView.clearAnimation();
+
         Intent intent = new Intent(SplashActivity.this, AccountActivity.class);
         startActivity(intent);
         finish();

@@ -3,9 +3,74 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/baya_tech_black</item>
+        <item name="colorPrimaryDark">@color/baya_tech_black</item>
+        <item name="colorAccent">@color/baya_tech_octopus</item>
+    </style>
+
+    <!--No Action Bar-->
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/baya_tech_octopus</item>
+    </style>
+
+    <!--App name Style-->
+    <style name="appNameStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/baya_tech_white</item>
+    </style>
+
+    <!-- Bullets page indicator style -->
+    <style name="bulletPageIndicatorBaseStyle">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/page_indicator_light_bullet</item>
+    </style>
+
+    <!-- Bullets page indicator style -->
+    <style name="bulletPageIndicatorStyle" parent="bulletPageIndicatorBaseStyle">
+        <item name="android:background">@drawable/page_indicator_light_bullet</item>
+    </style>
+
+    <!--Account Text Style-->
+    <style name="accountTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/baya_tech_white</item>
+    </style>
+
+    <!--Account EditTextStyle-->
+    <style name="accountEditTextStyle">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:background">@drawable/rectangle_rounded_corners_octopus</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:inputType">textFilter|textNoSuggestions</item>
+    </style>
+
+    <!-- Account LabelText style-->
+    <style name="accountLabelTextViewStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--Account Button Style-->
+    <style name="accountButtonStyle" parent="accountLabelTextViewStyle">
+        <item name="android:background">@drawable/account_octopus_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">35dp</item>
     </style>
 
 </resources>
